@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 96488494}
   - component: {fileID: 96488496}
   - component: {fileID: 96488495}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1590,6 +1590,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   jumpForce: 14
+  jumpableGround:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!95 &981756363
 Animator:
   serializedVersion: 5
