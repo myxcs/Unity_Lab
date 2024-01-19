@@ -23,9 +23,8 @@ public class ItemCollector : MonoBehaviour
         }
         if(collision.gameObject.CompareTag("Apple"))
         {
-            
-            applesText.text = "Apples: " + apples;
             apples++;
+            applesText.text = "Apples: " + apples;
             Destroy(collision.gameObject);
         }
     }
