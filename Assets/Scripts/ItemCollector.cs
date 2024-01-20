@@ -10,6 +10,7 @@ public class ItemCollector : MonoBehaviour
     private int apples = 0;
     [SerializeField] private TextMeshPro cherriesText;
     [SerializeField] private Text applesText;
+    [SerializeField] private AudioSource collectionSoundEffect;
     //tạo trigger
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -23,6 +24,7 @@ public class ItemCollector : MonoBehaviour
         }
         if(collision.gameObject.CompareTag("Apple"))
         {
+            collectionSoundEffect.Play();
             apples++;
             applesText.text = "Apples: " + apples;
             Destroy(collision.gameObject);
